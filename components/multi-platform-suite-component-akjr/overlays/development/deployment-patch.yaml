@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: multi-platform-suite-component-akjr
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/multi-platform-build-tenant/multi-platform-suite-application-mpmu/multi-platform-suite-component-akjr@sha256:d502fadd3d6c52be6f15d2c131a8c1e7471f041307da4b7a0c9b29ed1359abe6
+        name: my-go
+        resources: {}
+status: {}
